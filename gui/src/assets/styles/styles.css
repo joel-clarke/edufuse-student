@@ -1,0 +1,67 @@
+.tabs {
+    margin-top: 45px;
+}
+
+.tab div {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    color: #969696;
+}
+
+.tab div:hover {
+    color: #eeeeee;
+}
+
+.tab div.active {
+    color: #eeeeee;
+}
+
+.icons {
+    display: block;
+    padding-bottom: 6px;
+}
+
+.text {
+    display: block;
+    font-size: 8px;
+    font-style: normal;
+}
+
+.logo {
+    margin: 30px;
+    height: 40px;
+    width: 40px;
+}
+
+.settings {
+    position: absolute;
+    bottom: 15px;
+    margin-left: 27px
+}
+
+.title {
+    text-align: left;
+    line-height: 35px;
+    border-bottom: 1px solid #232931;
+    color: #232931;
+    vertical-align: middle;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.bv-example-row {
+    height: 100%;
+}
+
+.error {
+    color: red;
+    font-family: 'Montserrat', sans-serif;
+}

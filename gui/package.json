@@ -1,0 +1,77 @@
+{
+  "name": "edufuse",
+  "version": "0.1.0",
+  "private": true,
+  "description": "educational tool for developing user space filesystems",
+  "author": "@lukethompsxn and @joel-clarke",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "dist": "electron-builder",
+    "electron:build": "vue-cli-service electron:build",
+    "electron:serve": "vue-cli-service electron:serve",
+    "pack": "electron-builder --dir",
+    "postinstall": "electron-builder install-app-deps",
+    "postuninstall": "electron-builder install-app-deps"
+  },
+  "main": "background.js",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-brands-svg-icons": "^5.9.0",
+    "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "@fortawesome/vue-fontawesome": "^0.1.6",
+    "aws-sdk": "^2.500.0",
+    "bootstrap": "^4.3.1",
+    "bootstrap-vue": "^2.0.0-rc.26",
+    "buefy": "^0.7.10",
+    "core-js": "^2.6.5",
+    "highcharts": "^7.1.2",
+    "highcharts-vue": "^1.3.5",
+    "jquery": "^3.4.1",
+    "material-design-icons": "^3.0.1",
+    "parse-filepath": "^1.0.2",
+    "sl-vue-tree": "^1.8.4",
+    "vue": "^2.6.10",
+    "vue-json-tree-view": "^2.1.4",
+    "vue-multiselect": "^2.1.6",
+    "vue-router": "^3.0.7",
+    "vue-terminal-ui": "^0.1.5",
+    "vue2-highcharts": "^1.2.5",
+    "vuescroll": "^4.13.1",
+    "walkdir": "^0.4.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.8.0",
+    "@vue/cli-plugin-eslint": "^3.8.0",
+    "@vue/cli-service": "^3.8.0",
+    "electron": "^5.0.6",
+    "electron-builder": "^21.2.0",
+    "vue-cli-plugin-electron-builder": "^1.4.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "license": "MIT"
+}
