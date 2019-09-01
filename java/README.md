@@ -5,6 +5,20 @@
 - Download and install jdk-8 (or newer).
 - Add edufuse as a dependency in your project either by downloading the latest [release](https://github.com/lukethompsxn/edufuse-student/releases) or using [maven, gradle or similar](https://mvnrepository.com/artifact/com.github.lukethompsxn/edufuse).
 
+Maven
+```
+<dependency>
+  <groupId>com.github.lukethompsxn</groupId>
+  <artifactId>edufuse</artifactId>
+  <version>1.0.2</version>
+</dependency>
+```
+
+Gradle
+```
+compile group: 'com.github.lukethompsxn', name: 'edufuse', version: '1.0.2'
+```
+
 ### Important Classes
 - `FileSystemStub` is the stub class which your file system implementations must extend. This stub class has method signatures for all of the supported FUSE functions. 
 - `AbstractFS` is the abstract class which `FileSystemStub` extends. This class provides the logic for communicating with the underlying FUSE implementation, determining the implemented methods, mounting of the file system and unmounting. 
